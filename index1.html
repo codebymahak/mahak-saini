@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quibusdam, impedit adipisci repellat iusto delectus necessitatibus nisi veniam laborum, cum distinctio minima dignissimos eum quas consequuntur et dolores fuga iure.</p>
+    <button>click me</button>
+    </div>
+</body>
+<script>
+    const para=document.querySelector('p');
+    const btn=document.querySelector('button');
+    const div=document.querySelector('div');
+      div.addEventListener('click',(e)=>{
+        console.log(e.traget);
+    })
+
+    div.addEventListener('click',()=>{
+        console.log('click from parent');
+    },true)
+    para.addEventListener('click',()=>{
+        console.log('click from child');
+    })
+        btn.addEventListener('click',()=>{
+        console.log('click from child');
+        })
+          div.addEventListener('click',()=>{
+        console.log('child 1');
+    },true)
+    para.addEventListener('click',()=>{
+        console.log('child 2');
+    })
+     btn.addEventListener('click',()=>{
+    console.log('child 3');
+        }) 
+</script>
+</html>
