@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <!-- <h1 id="heading">todo list<span hidden="true">novem</span> </h1> -->
+ 
+    <h1>todo list</h1>
+     <input type="text" name="" id="">
+    <button>add</button>
+    <ul>
+         <li>apple</li> 
+    </ul> 
+   </body>
+        <script>
+         const input=document.querySelector("input");
+         const btn=document.querySelector("button");
+        const list=document.querySelector("ul");
+            btn.addEventListener('click',()=>{
+              console.log(input.value.trim());
+              if(input.value.trim()===""){
+                return
+                 }
+              //      list.prepend('<h1>heloo</h1>')
+                  // const heading=document.createElement('h1')
+                  // heading.innerText="hello"
+                  // document.body.prepend(heading)
+
+
+                   //const task=document.createElement('li');
+        //task.innerHTML=input.value;
+        //task.innerHTML=`${input.value} <button>x</button>`;
+        //list.prepend(task);
+
+               const task=document.createElement('li');
+               task.innerHTML=`${input.value}<button onclick="makegreen()">✅</button>`;//inline events
+              //  task.innerHTML=input.value;
+              list.prepend(task)
+         
+              input.value='';
+              //append->push
+             //prepend->unshift -->
+             
+              }); 
+
+              function makegreen(){
+                const listItems=document.querySelectorAll("li");
+                listItems.forEach(li=>{
+                  li.style.color="green";
+                });
+              }
+              // list.addEventListener('click',(e)=>{
+              // console.log(e.target)
+              //   }
+              // )
+          
+
+              // list.addEventListener('click',(e)=>{
+              //   console.log(e);
+              // }) 
+              
+//            list.addEventListener('click',(e)=>{
+//         if(e.target.tagName==='BUTTON'){
+//             e.target.parentNode.remove()
+//         }
+//     })
+
+
+          // list.addEventListener('click',(e)=>{
+          //       if(e.target.tagName==='BUTTON'){
+          //     console.log('clicked')
+          //       }
+          //       console.log(e)
+          //     })
+
+          
+          
+
+            </script>
+
+</html>
