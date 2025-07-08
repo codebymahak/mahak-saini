@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f0f4f8;
+  padding: 30px;
+}
+
+/* Form Container */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Section Headings */
+section > p {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+ h1{
+    text-align:center;
+    font-weight: bolder;
+    font-size: 30px;
+ }
+
+ .b{
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* Inputs and Textareas */
+input[type="text"],
+textarea,
+t {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Button */
+button {
+   background-color: aqua;
+    height:30px;
+    width:200px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Resume Output */
+#resumeOutput {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings in Resume */
+#resumeOutput h2 {
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+#resumeOutput h3 {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  color: #0b6771;
+}
+
+/* Hide element if needed */
+.hidden {
+  display: none;
+}
