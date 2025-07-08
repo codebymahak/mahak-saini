@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resume.css"/> 
+</head>
+<body>
+    
+    <div>
+    <header>
+    <h1>Resume Builder</h1>
+    </header>
+    
+    <form id="resumeForm">
+  <p class="b">Personal Information:-</p><br>
+            Name: <input type="text" placeholder="enter your name" id="name"><br><br>
+            Email: <input type="text" placeholder="enter your email" id="email"><br><br>
+            Phone No.: <input type="text" placeholder="enter your phone number" id="phone"><br><br><hr>
+
+ <p class="b">Education:-</p><br>
+                Degree: <input type="text" placeholder="enter your degree" id="degree"><br><br>
+                Institute Name: <input type="text" placeholder="enter your Institute Name" id="institute"><br><br>
+                Year Attended: <input type="text" placeholder="year of attend" id="year"><br><br>
+                Result: <select name="result" id="resultType">
+                    <option value="Percentage">Percentage</option>
+                    <option value="CGPA">CGPA</option>
+                </select>
+                <input type="text" placeholder="enter your result" id="result"><br><br><hr>
+
+  <p class="b">skills:- </p> <br>
+  <textarea id="skills" rows="5"></textarea><hr>
+
+   <p class="b">hobbies:- </p><br>
+  <label><input type="checkbox" id="h1" value="Playing"> Playing</label><br>
+  <label><input type="checkbox" id="h2" value="Singing"> Singing</label><br><br><hr>
+
+  <br><button type="button" id="makeResume">Generate Resume</button>
+</form>
+
+<div id="resumeOutput" class="hidden"></div>
+
+<script src="resume.js"></script>
+
+</body>
+</html>
